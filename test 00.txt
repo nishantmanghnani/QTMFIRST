@@ -5,3 +5,4 @@ test
 ¿Puedes hablar más despacio? — Can you speak slowly?
 ¿Dónde puedo encontrar un taxi? — Where can I find a taxi?
 ¿Dónde está [hotel’s name] hotel? — Where is [hotel’s name] hotel?
+¿Dónde está [hotel’s name] hotel? — Where is [hotel’s name] hotel?
