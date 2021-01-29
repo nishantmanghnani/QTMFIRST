@@ -1,0 +1,12 @@
+The messages in your personal Digest represent emails that have been filtered and sorted into different categories, giving you an opportunity to take action on them. Click the link in the Subject column to view the message.
+Request New End User Digest   Request Safe/Blocked Senders List    Manage My Account     
+
+
+
+The emails listed in this section represent low priority email such as newsletters, invitations, and announcements placed in your personal quarantine. If you want to receive email from the sender, click Allow Sender - future emails from the sender will be delivered to your inbox. Otherwise, click Block Sender to stop receiving email from the sender.
+Low Priority Mail - Quarantined  
+
+From	Subject	Date	Action
+info@e.atlassian.com
+Find out how National Bank of Canada scaled with Jira Software Data Center
+2021-01-28 06:43:37	Release
