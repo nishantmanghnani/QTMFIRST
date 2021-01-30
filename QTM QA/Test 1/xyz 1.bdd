@@ -1,0 +1,41 @@
+
+
+[Rally][RQ]: Attachment field is shown in detail view
+
+Details:
+Browser: Chrome (87.0)
+QTM: https://qtmnewuiqa86.qmetry.com/ (8.7.1 On premise)
+
+
+Pre-requisite: Should have rally configured.
+
+Repro steps:
+1. Navigate to External entity detail view
+2. Observe if attachment field is shown or not.
+
+Actual result:
+Attachment field is shown in RQ detail view
+
+Expected result: 
+Attachment field is not shown in RQ detail view
+
+
+
+
+
+
+
+
+[Jira]: As a QTM user I should be able to upload attachment as per size limit set in Jira but QTM only allows file upto 10mb while in Jira user can set the limit.
+
+Current behavior:
+Currently QTM does not allow uploading with size limit more than 10mb which is set by default in Jira, but user can change the default setting in Jira and increase (upto 2gb) or decrease it as per requirement.
+
+Expected behavior: 
+As a QTM user I should be able to attach files from QTM and the set limit should be fetched from Jira, or alternatively we should allow the user to set the attachment size limit in QTM as well for external entities which cannot be greater then set limit in Jira.
+
+
+Repro steps:
+1. Configure Rally configuration
+2. Select it under Project -> Integration
+3. View Select workspace drop down control.
