@@ -8,3 +8,6 @@ Scenario Outline: Simple Google searches
     | panda    |
     | elephant |
     | rhino    |
+    | 
+    | test
+    | test
