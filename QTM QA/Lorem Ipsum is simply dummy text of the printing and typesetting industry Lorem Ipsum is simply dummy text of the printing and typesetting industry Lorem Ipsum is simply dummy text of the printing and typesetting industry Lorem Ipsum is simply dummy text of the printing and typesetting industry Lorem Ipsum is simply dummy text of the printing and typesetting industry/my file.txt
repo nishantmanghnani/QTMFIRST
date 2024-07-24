@@ -1,0 +1,13 @@
+Scenario Outline: Address entry
+  Given the profile edit page is displayed
+  When the user sets the street address to "<street>"
+  And the user sets the second address line to "<second>"  
+  And the user sets the city to "<city>"
+  And the user sets the state to "<state>"
+  And the user sets the zipcode to "<zipcode>"
+  And the user sets the country to "<country>"
+  And the user clicks the save button
+  Then ...
+
+  Examples: Addresses
+    | street | second | city | state | zipcode | country |
