@@ -12,3 +12,4 @@ Scenario Outline: Address entry
   Examples: Addresses
     | street | second | city | state | zipcode | country |
     | new
+    | 1
