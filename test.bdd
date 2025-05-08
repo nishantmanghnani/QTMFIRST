@@ -1,1 +1,179 @@
-Test
+ {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2828320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculatorSteps.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Test Case #1",
+        "id": "calculator;add-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 142650275,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I have a Digital calculator",
+            "match": {
+              "location": "CalculatorSteps.i_have_a_calculator()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2324505,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I add 20 and 3 updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 6
+                },
+                {
+                  "val": "3",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculatorSteps.i_add_and(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123165,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the result should be 23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "23",
+                  "offset": 21
+                }
+              ],
+              "location": "CalculatorSteps.the_result_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": ""
+          },
+          {
+            "line": 19,
+            "name": ""
+          }
+        ]
+      },
+	  {
+        "before": [
+          {
+            "result": {
+              "duration": 2828320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculatorSteps.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Test Case #2",
+        "id": "calculator;add-two-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 142650275,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have a Digital calculator plus",
+            "match": {
+              "location": "CalculatorSteps.i_have_a_calculator()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2324505,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add 20 and 3 updated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 6
+                },
+                {
+                  "val": "3",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculatorSteps.i_add_and(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123165,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the result should be 23",
+            "match": {
+              "arguments": [
+                {
+                  "val": "23",
+                  "offset": 21
+                }
+              ],
+              "location": "CalculatorSteps.the_result_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": ""
+          },
+          {
+            "line": 19,
+            "name": ""
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 27221,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CalculatorSteps.setUp()"
+            }
+          }
+        ]
