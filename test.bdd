@@ -1,69 +1,39 @@
-Feature: Buying bread from the store [All Test Cases Description]
-
-
+Feature: Buying bread from the store
   As a customer
-
   I want to buy bread from the store
-
   So that I can have fresh bread for my meals
 
+  @requirementKey = FUN-RQ-1
+  @testEntityKey = FUN-TC-1 
 
-  @requirementKey = BD-RQ-1 [Link the RQ]
+  Scenario: Successfully buying a loaf of bread
+    Given the store is open
+    And I have enough money to buy bread 
+    When I go to the bread aisle
+    And I select a loaf of bread 
+    And I go to the checkout counter
+    And I pay for the bread
+    Then I should receive a receipt
+    And I should have a loaf of bread
 
-  @testEntityKey = BD-TC-1 [Update/Version the Test case]
+  @requirementKey = FUN-RQ-1
+  @testEntityKey = FUN-TC-2
 
-  Scenario: Successfully buying a loaf of bread [Test Case 1 - Summary]
+  Scenario: Buying bread when the store is closed 
+    Given the store is closed 
+    When I try to enter the store 
+    Then I should not be able to enter 
+    And I should not be able to buy bread
 
-    Given the store is open [Step 1]
+  @requirementKey = FUN-RQ-1
+  @testEntityKey = FUN-TC-3
 
-    And I have enough money to buy bread [Step 2]
-
-    When I go to the bread aisle [Step 3]
-
-    And I select a loaf of bread [Step 4]
-
-    And I go to the checkout counter [Step 5]
-
-    And I pay for the bread [Step 6]
-
-    Then I should receive a receipt [Step 7]
-
-    And I should have a loaf of bread [Step 8]
-
-
-  @requirementKey = BD-RQ-1 [Link the RQ]
-
-  @testEntityKey = BD-TC-2 [Update/Version the Test case]
-
-  Scenario: Buying bread when the store is closed [Test Case 2 - Summary]
-
-    Given the store is closed [Step 1]
-
-    When I try to enter the store [Step 2]
-
-    Then I should not be able to enter [Step 3]
-
-    And I should not be able to buy bread [Step 4]
-
-
-  @requirementKey = BD-RQ-1 [Link the RQ]
-
-  @testEntityKey = BD-TC-3 [Update/Version the Test case]
-
-  Scenario: Buying bread with insufficient funds [Test Case 3 - Summary]
-
-    Given the store is open [Step 1]
-
-    And I do not have enough money to buy bread [Step 2]
-
-    When I go to the bread aisle [Step 3]
-
-    And I select a loaf of bread [Step 4]
-
-    And I go to the checkout counter [Step 5]
-
-    And I try to pay for the bread [Step 6]
-
-    Then the transaction should be declined [Step 7] 
-
-    And I should not be able to buy the bread [Step 8]  
+  Scenario: Buying bread with insufficient funds
+    Given the store is open 
+    And I do not have enough money to buy bread 
+    When I go to the bread aisle
+    And I select a loaf of bread 
+    And I go to the checkout counter 
+    And I try to pay for the bread 
+    Then the transaction should be declined 
+    And I should not be able to buy the bread
