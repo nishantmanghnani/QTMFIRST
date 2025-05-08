@@ -4,8 +4,6 @@ Feature: Buying bread from the store
   I want to buy bread from the store
   So that I can have fresh bread for my meals
 
-  @requirementKey=FUN-RQ-1
-  @testEntityKey=FUN-TC-1
   Scenario: Successfully buying a loaf of bread
     Given the store is open
     And I have enough money to buy bread
@@ -16,16 +14,12 @@ Feature: Buying bread from the store
     Then I should receive a receipt
     And I should have a loaf of bread
 
-  @requirementKey=FUN-RQ-1
-  @testEntityKey=FUN-TC-2
   Scenario: Buying bread when the store is closed
     Given the store is closed
     When I try to enter the store
     Then I should not be able to enter
     And I should not be able to buy bread
 
-  @requirementKey=FUN-RQ-1
-  @testEntityKey=FUN-TC-3
   Scenario: Buying bread with insufficient funds
     Given the store is open
     And I do not have enough money to buy bread
