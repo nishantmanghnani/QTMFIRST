@@ -1,0 +1,18 @@
+  Scenario: Successful ticket booking
+    Given the user is on the ticket booking homepage
+    When the user selects a destination and travel date
+    And the user selects a preferred time and seat
+    And the user enters valid payment details
+    Then the ticket should be booked successfully
+    And a confirmation message with ticket details should be displayed
+
+  Scenario: Booking fails due to payment error
+    Given the user has selected destination, date, time, and seat
+    When the user enters invalid payment details
+    Then the booking should not be completed
+    And an error message should be shown
+
+  Scenario: No seats available
+    Given the user selects a fully booked travel time
+    When the user tries to proceed with booking
+    Then the system should show "No seats available" message
