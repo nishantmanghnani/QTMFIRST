@@ -13,3 +13,4 @@ Scenario Outline: Address entry
     | street | second | city | state | zipcode | country |
     | new
     | 1
+Check
