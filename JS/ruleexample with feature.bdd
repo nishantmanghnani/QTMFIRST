@@ -1,0 +1,38 @@
+@store @bread @ui
+@requirementKey=PRAC-RQ-1
+Feature: Buying bread from the store 
+  As a customer,
+  I want to buy bread from the store,
+  So that I can have fresh bread for my meals.
+  
+  Rule: Successful purchase 
+    Description: Customers can successfully purchase bread when the store is open and they have enough money. 
+    @positive @open 
+    Example: Successful purchase with enough money 
+      Given the store is open 
+      And I have enough money to buy bread
+      When I go to the checkout counter
+      And I try to pay for the bread
+      Then I should be able to buy the bread
+      And I should receive a receipt
+      And I should have a loaf of bread
+
+  Rule: Unsuccessful purchase 
+    Description: Customers cannot purchase bread if the store is closed or they do not have enough money. 
+    @negative @closed 
+    Example: Attempting to buy bread when the store is closed 
+      Given the store is closed 
+      When I try to enter the store
+      Then I should not be able to enter
+      And I should not be able to buy bread
+
+    @negative @notenoughmoney 
+    Example: Attempting to buy bread with insufficient funds 
+      Given the store is open 
+      And I do not have enough money to buy bread
+      When I go to the checkout counter
+      And I try to pay for the bread
+      Then the transaction should be declined
+      And I should not be able to buy the bread
+      And I should not receive a receipt
+      And I should not have a loaf of bread
