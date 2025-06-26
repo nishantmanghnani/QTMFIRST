@@ -1,0 +1,7 @@
+Feature: Order History
+
+@requirementKey=QTMC-RQ-1
+  Scenario: User views their order history
+    Given the user is logged in
+    When the user navigates to the "My Orders" page
+    Then a list of previous orders should be displayed
