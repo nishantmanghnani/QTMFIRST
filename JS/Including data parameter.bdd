@@ -1,0 +1,17 @@
+Feature: Buying bread from the store. As a customer, I want to buy bread from the store so that I can have fresh bread for my meals
+  
+  Scenario Outline: Buying bread with different conditions
+    Given the store is <store_status>
+    And I have <money_status> money to buy bread
+    When I go to the bread aisle 
+    And I select a loaf of bread
+    And I go to the checkout counter
+    And I try to pay for the bread 
+    Then I should <result> to buy the bread 
+    And I should <receipt_status> a receipt 
+    And I should <bread_status> a loaf of bread 
+
+  Examples:
+    | store_status | money_status   | result        | receipt_status | bread_status    |
+    | closed       | enough         | not be able   | not receive    | not have        |
+    | open         | not enough     | not be able   | not receive    | not have        |
