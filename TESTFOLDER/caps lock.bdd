@@ -16,3 +16,4 @@ Scenario Outline: Address entry
 Check
 
 new
+test
