@@ -17,3 +17,12 @@ Check newExamples: Addresses
     | street | second | city | state | zipcode | country |
     | new
     | 1
+    | 
+    |  Examples: Addresses
+    | street | second | city | state | zipcode | country |
+    | new
+    | 1
+Check newExamples: Addresses
+    | street | second | city | state | zipcode | country |
+    | new
+    | 1
