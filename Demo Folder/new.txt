@@ -22,7 +22,18 @@ Check newExamples: Addresses
     | street | second | city | state | zipcode | country |
     | new
     | 1
-Check newExamples: Addresses
+
+Check1 newExamples: Addresses
+    | street | second | city | state | zipcode | country |
+    | new
+    | 1
+
+Check2 newExamples: Addresses
+    | street | second | city | state | zipcode | country |
+    | new
+    | 1
+
+Check3 newExamples: Addresses
     | street | second | city | state | zipcode | country |
     | new
     | 1
